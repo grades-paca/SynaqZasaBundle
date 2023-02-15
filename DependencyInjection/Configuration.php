@@ -17,8 +17,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('synaq_zasa');
+        $treeBuilder = new TreeBuilder('synaq_zasa');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
